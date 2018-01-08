@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="15dp"/>
+        android:padding="15dp"
+        android:textColor="@color/light_text_color"/>
     <!--表情,输入框,发送-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,9 +26,10 @@
         <android.support.text.emoji.widget.EmojiAppCompatEditText
             android:id="@+id/edt_msg"
             android:layout_width="0dp"
-            android:focusable="false"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:focusable="false"
+            android:textColor="@color/light_text_color"/>
 
         <Button
             android:id="@+id/btn_send"

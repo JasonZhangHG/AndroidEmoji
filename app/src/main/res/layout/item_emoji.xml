@@ -11,5 +11,6 @@
         android:gravity="center"
         android:minHeight="45dp"
         android:minWidth="45dp"
+        android:textColor="@color/light_text_color"
         android:textSize="20sp"/>
 </FrameLayout>
