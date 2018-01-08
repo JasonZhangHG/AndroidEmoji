@@ -1,6 +1,3 @@
-# AndroidEmoji
-Android Emoji 兼容4.4以上的版本
-Android Emoji 4.4版本的Emoji:
 😄 
 😃 
 😀 
