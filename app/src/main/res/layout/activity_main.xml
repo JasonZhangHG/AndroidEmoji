@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--显示表情的TextView-->
+    <android.support.text.emoji.widget.EmojiAppCompatTextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"/>
+    <!--表情,输入框,发送-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_emoji"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="表情"/>
+
+        <android.support.text.emoji.widget.EmojiAppCompatEditText
+            android:id="@+id/edt_msg"
+            android:layout_width="0dp"
+            android:focusable="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="发送"/>
+    </LinearLayout>
+    <!--表情面板-->
+    <FrameLayout
+        android:id="@+id/fl_emoji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+
